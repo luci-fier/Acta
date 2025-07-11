@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-tasks"></i> Task Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="#">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Stay Organized, Stay Productive</h2>
+            <p>Manage your tasks efficiently and achieve more with our powerful task management system.</p>
+            <a href="tasks.html" class="btn">Get Started</a>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <i class="fas fa-list-ul"></i>
+                <h3>Task Lists</h3>
+                <p>Create and organize your tasks into lists for better management.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Calendar View</h3>
+                <p>Stay on top of your schedule with a comprehensive calendar view.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-chart-pie"></i>
+                <h3>Reporting</h3>
+                <p>Track your progress and productivity with detailed reports.</p>
+            </div>
+        </section>
+
+        <section class="quick-task">
+            <h2>Quick Note</h2>
+            <form id="quick-task-form">
+                <input type="text" id="quick-task-input" placeholder="Add a quick note...">
+                <button type="submit" class="btn"><i class="fas fa-plus"></i> Add</button>
+            </form>
+            <ul id="quick-task-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Task Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

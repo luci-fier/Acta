@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System - Calendar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-tasks"></i> Task Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="calendar.html" class="active">Calendar</a></li>
+                <li><a href="reports.html">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="calendar-container">
+            <div class="calendar">
+                <div class="calendar-header">
+                    <button id="prev-month">&laquo;</button>
+                    <h2 id="calendar-month-year"></h2>
+                    <button id="next-month">&raquo;</button>
+                </div>
+                <div class="calendar-grid" id="calendar-grid">
+                    <!-- Calendar grid will be dynamically generated here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Task Management System</p>
+    </footer>
+
+    <script src="calendar.js"></script>
+</body>
+</html>

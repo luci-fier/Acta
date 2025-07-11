@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Task List */
+.task-list {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#search-input,
+#status-filter {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* Task Form */
+#task-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+#due-date-input,
+#priority-input {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    outline: none;
+}
+
+#priority-input {
+    border-radius: 0 4px 4px 0;
+}
+
+.btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Task Item */
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.task-item.completed {
+    background-color: #e6f7e6;
+    text-decoration: line-through;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task-item .task-text {
+    flex-grow: 1;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.task-item .priority-1 {
+    color: green;
+}
+
+.task-item .priority-2 {
+    color: orange;
+}
+
+.task-item .priority-3 {
+    color: red;
+}
+
+.task-item .delete-btn {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 16px;
+}
+
+.task-item .delete-btn:hover {
+    color: #ff0000;
+}
